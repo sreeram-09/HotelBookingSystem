@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Reservation - Aura Stay</title>
+  <meta name="description" content="Finalize your luxury hotel reservation with transparent pricing and instant room confirmation.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="site-logo" id="brand-logo" aria-label="Aura Stay Homepage">
+        <div class="logo-icon">✦</div>
+        <span>AURA STAY</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-explore">Explore Hotels</a></li>
+          <li><a href="booking-history.html" class="nav-link" id="nav-bookings">My Bookings</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-profile-badge" id="user-badge" title="Active guest profile">
+        <div class="user-avatar" id="user-avatar">SJ</div>
+        <span id="user-name">Sarah Jenkins</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumb back link -->
+    <div class="breadcrumbs-bar">
+      <a href="index.html" class="back-link" id="back-link">
+        &larr; Back to hotel
+      </a>
+    </div>
+
+    <!-- Booking Layout -->
+    <div class="booking-layout">
+      <!-- Left: Booking Form -->
+      <section class="booking-form-card" aria-label="Reservation Form">
+        <h1 class="form-title">Reserve Your Stay</h1>
+        <p class="form-subtitle">Fill in your stay dates and guest details. Your room status will be updated immediately.</p>
+
+        <form id="booking-form" novalidate>
+          <!-- Room Selection -->
+          <div class="form-group">
+            <label for="room-select" class="form-label">Select Room / Suite *</label>
+            <select id="room-select" class="form-select" required>
+              <option value="">Loading available rooms...</option>
+            </select>
+            <span class="field-error" id="error-room"></span>
+          </div>
+
+          <!-- Dates Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="check-in-date" class="form-label">Check-in Date *</label>
+              <input type="date" id="check-in-date" class="form-input" required>
+              <span class="field-error" id="error-checkIn"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="check-out-date" class="form-label">Check-out Date *</label>
+              <input type="date" id="check-out-date" class="form-input" required>
+              <span class="field-error" id="error-checkOut"></span>
+            </div>
+          </div>
+
+          <!-- Guests Count & Primary Contact -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests-count" class="form-label">Number of Guests *</label>
+              <input type="number" id="guests-count" class="form-input" min="1" max="6" value="2" required>
+              <span class="field-error" id="error-guests"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="primary-guest-name" class="form-label">Primary Guest</label>
+              <input type="text" id="primary-guest-name" class="form-input" readonly>
+            </div>
+          </div>
+
+          <!-- Guest Email -->
+          <div class="form-group">
+            <label for="primary-guest-email" class="form-label">Confirmation Email</label>
+            <input type="email" id="primary-guest-email" class="form-input" readonly>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="btn-submit-booking" class="btn btn-accent" style="width: 100%; height: 50px; font-size: 1.05rem; margin-top: 1rem;">
+            Confirm & Complete Booking
+          </button>
+        </form>
+      </section>
+
+      <!-- Right: Sticky Booking Summary -->
+      <aside class="summary-card" aria-label="Reservation Summary">
+        <div class="summary-card-header">
+          <img src="" alt="Hotel" id="summary-hotel-img" class="summary-hotel-img">
+          <h2 id="summary-hotel-name" class="summary-hotel-name">Loading Hotel...</h2>
+          <div id="summary-hotel-location" class="summary-hotel-location">Location</div>
+        </div>
+
+        <div class="summary-room-detail" id="summary-room-info">
+          <strong>Room:</strong> <span id="summary-room-type">Selecting room...</span><br>
+          <strong>Rate:</strong> <span id="summary-room-rate">$0.00</span> / night
+        </div>
+
+        <!-- Pricing Breakdown -->
+        <table class="pricing-table">
+          <tbody>
+            <tr>
+              <td>Duration</td>
+              <td id="calc-nights">0 nights</td>
+            </tr>
+            <tr>
+              <td>Room Subtotal</td>
+              <td id="calc-subtotal">$0.00</td>
+            </tr>
+            <tr>
+              <td>Taxes & Fees (12%)</td>
+              <td id="calc-taxes">$0.00</td>
+            </tr>
+            <tr class="total-row">
+              <td>Total Due</td>
+              <td id="calc-total">$0.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="font-size: 0.8rem; color: var(--color-text-muted); line-height: 1.4;">
+          🔒 Guaranteed reservation with zero cancellation penalty up to 48 hours prior to check-in.
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Aura Stay Hospitality Group. Full CRUD Hotel Booking Architecture.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Dependencies & Page Module -->
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script type="module" src="../js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "hotel-booking-system",
+  "version": "1.0.0",
+  "description": "Clean, optimized, beginner-friendly full CRUD Hotel Booking System",
+  "type": "module",
+  "scripts": {
+    "server": "json-server db.json --port 3000 --static .",
+    "start": "json-server db.json --port 3000 --static ."
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "json-server": "^0.17.4"
+  }
+}

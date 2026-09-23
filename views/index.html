@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Stay - Luxury Hotels & Handcrafted Escapes</title>
+  <meta name="description" content="Discover and book luxury boutique hotels and handcrafted suites worldwide with instant confirmation and seamless room management.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="site-logo" id="brand-logo" aria-label="Aura Stay Homepage">
+        <div class="logo-icon">✦</div>
+        <span>AURA STAY</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" id="nav-explore">Explore Hotels</a></li>
+          <li><a href="booking-history.html" class="nav-link" id="nav-bookings">My Bookings</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-profile-badge" id="user-badge" title="Active guest profile">
+        <div class="user-avatar" id="user-avatar">SJ</div>
+        <span id="user-name">Sarah Jenkins</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Filter Section -->
+  <main>
+    <section class="hero-banner">
+      <div class="container">
+        <h1 class="hero-title">Experience <span>Extraordinary</span> Stays</h1>
+        <p class="hero-subtitle">Curated boutique hotels, oceanside villas, and alpine chalets designed for unforgettable memories.</p>
+
+        <!-- Search & Filter Card -->
+        <div class="search-filter-card" role="search" aria-label="Hotel search and filters">
+          <div class="filter-grid">
+            <!-- Search Keyword -->
+            <div class="filter-group">
+              <label for="search-input" class="filter-label">Search Hotel</label>
+              <div class="filter-input-wrapper">
+                <input 
+                  type="text" 
+                  id="search-input" 
+                  class="filter-input" 
+                  placeholder="Hotel name or keyword..."
+                  autocomplete="off"
+                >
+              </div>
+            </div>
+
+            <!-- Location Filter -->
+            <div class="filter-group">
+              <label for="location-select" class="filter-label">Destination</label>
+              <select id="location-select" class="filter-select">
+                <option value="">All Locations</option>
+              </select>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group price-slider-container">
+              <div class="price-slider-header">
+                <label for="price-slider" class="filter-label">Max Price / Night</label>
+                <span id="price-slider-val" class="filter-label" style="color: var(--color-accent); font-size: 0.9rem;">$800</span>
+              </div>
+              <input 
+                type="range" 
+                id="price-slider" 
+                class="price-slider" 
+                min="100" 
+                max="800" 
+                step="25" 
+                value="800"
+              >
+            </div>
+
+            <!-- Reset Button -->
+            <button type="button" id="btn-reset-filters" class="btn-reset-filters">Reset Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Grid Section -->
+    <section class="container" aria-label="Available Hotels">
+      <div class="section-header">
+        <h2 class="section-title">Featured Destinations</h2>
+        <span id="hotel-count" class="hotel-count-badge">Loading hotels...</span>
+      </div>
+
+      <!-- Hotels Container (Populated by main.js) -->
+      <div id="hotels-grid" class="hotels-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Aura Stay Hospitality Group. Built with clean Vanilla JS & Axios.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Dependencies & Page Module -->
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

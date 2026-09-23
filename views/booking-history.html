@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings - Aura Stay</title>
+  <meta name="description" content="View past and active hotel reservations, track stay details, and manage reservation cancellations.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="site-logo" id="brand-logo" aria-label="Aura Stay Homepage">
+        <div class="logo-icon">✦</div>
+        <span>AURA STAY</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-explore">Explore Hotels</a></li>
+          <li><a href="booking-history.html" class="nav-link active" id="nav-bookings">My Bookings</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-profile-badge" id="user-badge" title="Active guest profile">
+        <div class="user-avatar" id="user-avatar">SJ</div>
+        <span id="user-name">Sarah Jenkins</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Header with Stats -->
+    <section class="history-page-header">
+      <h1 class="section-title" style="font-size: 2.25rem; margin-bottom: 1.5rem;">My Reservations</h1>
+
+      <!-- Stats Bar -->
+      <div class="history-stats-bar">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-total">0</div>
+          <div class="stat-label">Total Reservations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-confirmed" style="color: var(--color-success);">0</div>
+          <div class="stat-label">Active / Confirmed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-cancelled" style="color: var(--color-danger);">0</div>
+          <div class="stat-label">Cancelled</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bookings List Section -->
+    <section aria-label="Reservation Records">
+      <div id="bookings-list" class="bookings-history-list">
+        <!-- Rendered dynamically by bookingHistory.js -->
+        <div class="state-container">
+          <div class="loading-spinner"></div>
+          <p class="state-title">Loading Your Reservations</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cancellation Confirmation Modal -->
+  <div id="cancel-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h2 id="modal-title" class="modal-title">Cancel Reservation?</h2>
+      <p id="modal-desc" class="modal-text">
+        Are you sure you want to cancel this booking? The room will immediately be released and marked as available for other guests.
+      </p>
+      <div class="modal-actions">
+        <button type="button" id="btn-modal-keep" class="btn btn-outline">Keep Booking</button>
+        <button type="button" id="btn-modal-confirm" class="btn btn-danger-outline">Confirm Cancellation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Aura Stay Hospitality Group. Full CRUD Hotel Booking Architecture.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Dependencies & Page Module -->
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script type="module" src="../js/bookingHistory.js"></script>
+</body>
+</html>

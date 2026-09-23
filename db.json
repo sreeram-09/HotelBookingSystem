@@ -1,0 +1,287 @@
+{
+  "hotels": [
+    {
+      "id": "hotel-1",
+      "name": "The Grand Azure Resort & Spa",
+      "location": "Miami Beach, Florida",
+      "rating": 4.9,
+      "price": 280,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Ocean View",
+        "Infinity Pool",
+        "Full-Service Spa",
+        "Fine Dining",
+        "Free High-Speed Wi-Fi",
+        "Valet Parking"
+      ]
+    },
+    {
+      "id": "hotel-2",
+      "name": "Alpine Crest Luxury Lodge",
+      "location": "Aspen, Colorado",
+      "rating": 4.8,
+      "price": 340,
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Ski-in / Ski-out",
+        "Heated Outdoor Pool",
+        "Fireplace Suites",
+        "Mountain View",
+        "Spa & Sauna",
+        "Airport Shuttle"
+      ]
+    },
+    {
+      "id": "hotel-3",
+      "name": "Metropolitan Lumina Hotel",
+      "location": "Manhattan, New York",
+      "rating": 4.7,
+      "price": 310,
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Rooftop Sky Lounge",
+        "24/7 Concierge",
+        "State-of-the-Art Gym",
+        "Cocktail Bar",
+        "Executive Workspace",
+        "Pet Friendly"
+      ]
+    },
+    {
+      "id": "hotel-4",
+      "name": "Palazzo Serenade Boutique",
+      "location": "Florence, Italy",
+      "rating": 4.9,
+      "price": 390,
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Historic Courtyard",
+        "Michelin-Starred Dining",
+        "Wine Cellar Tours",
+        "Marble Baths",
+        "Butler Service",
+        "Terrace Garden"
+      ]
+    },
+    {
+      "id": "hotel-5",
+      "name": "Emerald Bay Sanctuary",
+      "location": "Maui, Hawaii",
+      "rating": 4.9,
+      "price": 450,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Private Beach Access",
+        "Snorkeling Gear",
+        "Tropical Lagoon Pool",
+        "Sunset Catamaran Cruise",
+        "Kids Club",
+        "Outdoor Cabanas"
+      ]
+    },
+    {
+      "id": "hotel-6",
+      "name": "Solstice Tower Hotel",
+      "location": "Tokyo, Japan",
+      "rating": 4.8,
+      "price": 260,
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "City Skyline View",
+        "Japanese Onsen Bath",
+        "Tea Ceremony Room",
+        "High-Speed Fiber Wi-Fi",
+        "Subway Direct Access",
+        "Smart Room Automation"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-101",
+      "hotelId": "hotel-1",
+      "roomNumber": "101",
+      "roomType": "Deluxe Oceanfront King",
+      "price": 280,
+      "status": "available"
+    },
+    {
+      "id": "room-102",
+      "hotelId": "hotel-1",
+      "roomNumber": "102",
+      "roomType": "Grand Coastal Suite",
+      "price": 360,
+      "status": "available"
+    },
+    {
+      "id": "room-103",
+      "hotelId": "hotel-1",
+      "roomNumber": "103",
+      "roomType": "Penthouse Sunset Villa",
+      "price": 520,
+      "status": "booked"
+    },
+    {
+      "id": "room-201",
+      "hotelId": "hotel-2",
+      "roomNumber": "201",
+      "roomType": "Alpine Fireplace Queen",
+      "price": 340,
+      "status": "available"
+    },
+    {
+      "id": "room-202",
+      "hotelId": "hotel-2",
+      "roomNumber": "202",
+      "roomType": "Mountain Panorama Suite",
+      "price": 460,
+      "status": "available"
+    },
+    {
+      "id": "room-203",
+      "hotelId": "hotel-2",
+      "roomNumber": "203",
+      "roomType": "Chalet Executive Suite",
+      "price": 580,
+      "status": "booked"
+    },
+    {
+      "id": "room-301",
+      "hotelId": "hotel-3",
+      "roomNumber": "301",
+      "roomType": "Skyline Executive King",
+      "price": 310,
+      "status": "available"
+    },
+    {
+      "id": "room-302",
+      "hotelId": "hotel-3",
+      "roomNumber": "302",
+      "roomType": "Manhattan Corner Suite",
+      "price": 420,
+      "status": "available"
+    },
+    {
+      "id": "room-303",
+      "hotelId": "hotel-3",
+      "roomNumber": "303",
+      "roomType": "Studio Loft King",
+      "price": 270,
+      "status": "available"
+    },
+    {
+      "id": "room-401",
+      "hotelId": "hotel-4",
+      "roomNumber": "401",
+      "roomType": "Tuscan Renaissance Room",
+      "price": 390,
+      "status": "available"
+    },
+    {
+      "id": "room-402",
+      "hotelId": "hotel-4",
+      "roomNumber": "402",
+      "roomType": "Palazzo Master Suite",
+      "price": 540,
+      "status": "available"
+    },
+    {
+      "id": "room-403",
+      "hotelId": "hotel-4",
+      "roomNumber": "403",
+      "roomType": "Garden View Double",
+      "price": 350,
+      "status": "available"
+    },
+    {
+      "id": "room-501",
+      "hotelId": "hotel-5",
+      "roomNumber": "501",
+      "roomType": "Oceanfront Bungalow",
+      "price": 450,
+      "status": "available"
+    },
+    {
+      "id": "room-502",
+      "hotelId": "hotel-5",
+      "roomNumber": "502",
+      "roomType": "Lagoon View Villa",
+      "price": 620,
+      "status": "available"
+    },
+    {
+      "id": "room-503",
+      "hotelId": "hotel-5",
+      "roomNumber": "503",
+      "roomType": "Royal Beachfront Suite",
+      "price": 790,
+      "status": "available"
+    },
+    {
+      "id": "room-601",
+      "hotelId": "hotel-6",
+      "roomNumber": "601",
+      "roomType": "Zen City King",
+      "price": 260,
+      "status": "available"
+    },
+    {
+      "id": "room-602",
+      "hotelId": "hotel-6",
+      "roomNumber": "602",
+      "roomType": "Tokyo Horizon Suite",
+      "price": 380,
+      "status": "available"
+    },
+    {
+      "id": "room-603",
+      "hotelId": "hotel-6",
+      "roomNumber": "603",
+      "roomType": "Tatami Heritage Premier",
+      "price": 410,
+      "status": "available"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Sarah Jenkins",
+      "email": "sarah.jenkins@example.com"
+    },
+    {
+      "id": "user-2",
+      "name": "Michael Chang",
+      "email": "michael.chang@example.com"
+    },
+    {
+      "id": "user-3",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@example.com"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk-1001",
+      "userId": "user-1",
+      "hotelId": "hotel-1",
+      "roomId": "room-103",
+      "checkIn": "2026-10-10",
+      "checkOut": "2026-10-14",
+      "guests": 2,
+      "totalAmount": 2329.6,
+      "status": "confirmed"
+    },
+    {
+      "id": "bk-1002",
+      "userId": "user-1",
+      "hotelId": "hotel-2",
+      "roomId": "room-203",
+      "checkIn": "2026-11-05",
+      "checkOut": "2026-11-08",
+      "guests": 2,
+      "totalAmount": 1948.8,
+      "status": "confirmed"
+    }
+  ]
+}
