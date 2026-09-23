@@ -95,6 +95,118 @@
         "Subway Direct Access",
         "Smart Room Automation"
       ]
+    },
+    {
+      "id": "hotel-7",
+      "name": "Welcomhotel by ITC Hotels, Guntur",
+      "location": "Guntur, Andhra Pradesh",
+      "rating": 4.8,
+      "price": 75,
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Luxury Pool",
+        "Banquets & Conferences",
+        "Authentic Andhra Dining",
+        "Free High-Speed Wi-Fi",
+        "Fitness Center",
+        "Valet Parking"
+      ]
+    },
+    {
+      "id": "hotel-8",
+      "name": "The Capital Hotel Guntur",
+      "location": "Guntur, Andhra Pradesh",
+      "rating": 4.6,
+      "price": 45,
+      "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "City Center Location",
+        "Andhra Spice Restaurant",
+        "24/7 Room Service",
+        "Conference Hall",
+        "Free Wi-Fi",
+        "Airport Transfer"
+      ]
+    },
+    {
+      "id": "hotel-9",
+      "name": "Hotel Sindoori Grand",
+      "location": "Guntur, Andhra Pradesh",
+      "rating": 4.5,
+      "price": 38,
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Pure Vegetarian Dining",
+        "Central Air Conditioning",
+        "Free High-Speed Wi-Fi",
+        "Travel Desk",
+        "24/7 Front Desk",
+        "Free Parking"
+      ]
+    },
+    {
+      "id": "hotel-10",
+      "name": "Novotel Varun Beach",
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "rating": 4.8,
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Bay of Bengal View",
+        "Infinity Pool",
+        "Sea Breeze Terrace",
+        "Full-Service Spa",
+        "Bar & Grill",
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "id": "hotel-11",
+      "name": "Taj Falaknuma Palace",
+      "location": "Hyderabad, Telangana",
+      "rating": 4.9,
+      "price": 380,
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Nizami Royal Heritage",
+        "Grand Presidential Dining",
+        "Historical Palace Tour",
+        "Luxury Jiva Spa",
+        "Horse Carriage Arrival",
+        "Personal Butler"
+      ]
+    },
+    {
+      "id": "hotel-12",
+      "name": "The Gateway Hotel Krishna",
+      "location": "Vijayawada, Andhra Pradesh",
+      "rating": 4.7,
+      "price": 60,
+      "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Krishna River View",
+        "Authentic South Indian Cuisine",
+        "Rooftop Pool",
+        "High-Speed Wi-Fi",
+        "Banquet Facilities",
+        "Fitness Center"
+      ]
+    },
+    {
+      "id": "hotel-13",
+      "name": "Heritage Palms Beach Resort",
+      "location": "Goa, India",
+      "rating": 4.8,
+      "price": 160,
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+      "amenities": [
+        "Direct Beach Access",
+        "Goan Shack & Lounge",
+        "Ayurvedic Spa",
+        "Swimming Lagoon",
+        "Live Sunset Music",
+        "Free Wi-Fi"
+      ]
     }
   ],
   "rooms": [
@@ -240,6 +352,174 @@
       "roomNumber": "603",
       "roomType": "Tatami Heritage Premier",
       "price": 410,
+      "status": "available"
+    },
+    {
+      "id": "room-701",
+      "hotelId": "hotel-7",
+      "roomNumber": "701",
+      "roomType": "Executive Club Suite",
+      "price": 75,
+      "status": "available"
+    },
+    {
+      "id": "room-702",
+      "hotelId": "hotel-7",
+      "roomNumber": "702",
+      "roomType": "ITC Premium King",
+      "price": 95,
+      "status": "available"
+    },
+    {
+      "id": "room-703",
+      "hotelId": "hotel-7",
+      "roomNumber": "703",
+      "roomType": "WelcomPresidential Suite",
+      "price": 140,
+      "status": "available"
+    },
+    {
+      "id": "room-801",
+      "hotelId": "hotel-8",
+      "roomNumber": "801",
+      "roomType": "Superior City View King",
+      "price": 45,
+      "status": "available"
+    },
+    {
+      "id": "room-802",
+      "hotelId": "hotel-8",
+      "roomNumber": "802",
+      "roomType": "Executive Business Suite",
+      "price": 65,
+      "status": "available"
+    },
+    {
+      "id": "room-803",
+      "hotelId": "hotel-8",
+      "roomNumber": "803",
+      "roomType": "Capital Grand Family Suite",
+      "price": 85,
+      "status": "available"
+    },
+    {
+      "id": "room-901",
+      "hotelId": "hotel-9",
+      "roomNumber": "901",
+      "roomType": "Comfort Double Room",
+      "price": 38,
+      "status": "available"
+    },
+    {
+      "id": "room-902",
+      "hotelId": "hotel-9",
+      "roomNumber": "902",
+      "roomType": "Deluxe Executive King",
+      "price": 52,
+      "status": "available"
+    },
+    {
+      "id": "room-903",
+      "hotelId": "hotel-9",
+      "roomNumber": "903",
+      "roomType": "Sindoori Royal Suite",
+      "price": 70,
+      "status": "available"
+    },
+    {
+      "id": "room-1001",
+      "hotelId": "hotel-10",
+      "roomNumber": "1001",
+      "roomType": "Bay View Premier King",
+      "price": 120,
+      "status": "available"
+    },
+    {
+      "id": "room-1002",
+      "hotelId": "hotel-10",
+      "roomNumber": "1002",
+      "roomType": "Executive Sea Suite",
+      "price": 175,
+      "status": "available"
+    },
+    {
+      "id": "room-1003",
+      "hotelId": "hotel-10",
+      "roomNumber": "1003",
+      "roomType": "Oceanfront Panoramic Suite",
+      "price": 240,
+      "status": "available"
+    },
+    {
+      "id": "room-1101",
+      "hotelId": "hotel-11",
+      "roomNumber": "1101",
+      "roomType": "Palace Luxury Room",
+      "price": 380,
+      "status": "available"
+    },
+    {
+      "id": "room-1102",
+      "hotelId": "hotel-11",
+      "roomNumber": "1102",
+      "roomType": "Historical Royal Suite",
+      "price": 550,
+      "status": "available"
+    },
+    {
+      "id": "room-1103",
+      "hotelId": "hotel-11",
+      "roomNumber": "1103",
+      "roomType": "Grand Nizam Suite",
+      "price": 780,
+      "status": "available"
+    },
+    {
+      "id": "room-1201",
+      "hotelId": "hotel-12",
+      "roomNumber": "1201",
+      "roomType": "Deluxe River View Room",
+      "price": 60,
+      "status": "available"
+    },
+    {
+      "id": "room-1202",
+      "hotelId": "hotel-12",
+      "roomNumber": "1202",
+      "roomType": "Krishna Executive Suite",
+      "price": 95,
+      "status": "available"
+    },
+    {
+      "id": "room-1203",
+      "hotelId": "hotel-12",
+      "roomNumber": "1203",
+      "roomType": "Presidential Riverfront Suite",
+      "price": 150,
+      "status": "available"
+    },
+    {
+      "id": "room-1301",
+      "hotelId": "hotel-13",
+      "roomNumber": "1301",
+      "roomType": "Portuguese Heritage Room",
+      "price": 160,
+      "status": "available"
+    },
+    {
+      "id": "room-1302",
+      "hotelId": "hotel-13",
+      "roomNumber": "1302",
+      "roomType": "Seaside Garden Cottage",
+      "price": 210,
+      "status": "available"
+    },
+    {
+      "id": "room-1303",
+      "hotelId": "hotel-13",
+      "roomNumber": "1303",
+      "roomType": "Private Pool Beach Villa",
+      "price": 350,
       "status": "available"
     }
   ],
